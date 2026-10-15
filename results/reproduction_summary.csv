@@ -1,4 +1,4 @@
-scenario,EF_case,thermal_case,nuclear_case,regions,diagnostic_total_thermal_TWh,diagnostic_total_nuclear_TWh,diagnostic_total_gross_RE_TWh,diagnostic_total_positive_additional_RE_TWh,reported_total_positive_additional_RE_TWh,verification_passed_rows
+scenario,EF_case,thermal_case,nuclear_case,regions,diagnostic_total_thermal_TWh,diagnostic_total_nuclear_TWh,diagnostic_total_gross_RE_TWh,diagnostic_total_positive_additional_RE_TWh,reported_total_positive_additional_RE_TWh,comparison_rows_classified
 1,carbon_only,2016_mix,currently_operating,10,107.818839,55.985160,491.808315,323.313411,323.313411,10
 2,carbon_only,2016_mix,all_candidate_units,10,107.818839,176.411508,371.381967,232.403849,232.403849,10
 3,carbon_only,2016_mix,zero_nuclear,10,107.818839,0.000000,547.793475,379.298571,379.298571,10

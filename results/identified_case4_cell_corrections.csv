@@ -1,3 +1,3 @@
-region,scenario,workbook_gross_RE_TWh,arithmetic_expected_gross_RE_TWh,expected_minus_workbook_TWh,workbook_signed_net_shortfall_TWh,arithmetic_expected_signed_net_shortfall_TWh
-北陸,4,14.363647,24.204933852,9.841286852,5.130600,14.971886852
-中部,4,115.333624,105.492337131,-9.841286869,91.350093,81.508806131
+scenario,region,source_cell,reported_value_TWh,reconstructed_value_TWh,difference_TWh,evidence_status,classification,explanation
+4,北陸,再エネ目標量!F6,14.363647,24.204933852,9.841286852,published_scenario_equivalence,confirmed_case4_source_inconsistency,"Current and zero-nuclear outputs are both zero here, so Case 4 must equal Case 6 under the same EF and thermal case."
+4,中部,再エネ目標量!F7,115.333624,105.492337131,-9.841286869,published_scenario_equivalence,confirmed_case4_source_inconsistency,"Current and zero-nuclear outputs are both zero here, so Case 4 must equal Case 6 under the same EF and thermal case."

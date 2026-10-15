@@ -1,9 +1,9 @@
-region,scenario,workbook_gross_RE_TWh,arithmetic_expected_gross_RE_TWh,expected_minus_workbook_TWh,workbook_signed_net_shortfall_TWh,arithmetic_expected_signed_net_shortfall_TWh
-北陸,4,14.363647,24.204933852,9.841286852,5.130600,14.971886852
-中部,4,115.333624,105.492337131,-9.841286869,91.350093,81.508806131
-北陸,13,18.204178,22.028750444,3.824572444,8.971130,12.795703444
-中部,13,97.292539,82.881656643,-14.410882357,73.309008,58.898125643
-北陸,14,6.565642,10.390214444,3.824572444,-2.667406,1.157167444
-中部,14,75.113095,60.702212643,-14.410882357,51.129564,36.718681643
-北陸,15,18.204178,22.028750444,3.824572444,8.971130,12.795703444
-中部,15,97.292539,82.881656643,-14.410882357,73.309008,58.898125643
+scenario,region,source_cell,reported_value_TWh,reconstructed_value_TWh,difference_TWh,evidence_status,classification,explanation
+4,北陸,再エネ目標量!F6,14.363647,24.204933852,9.841286852,published_scenario_equivalence,confirmed_case4_source_inconsistency,"Current and zero-nuclear outputs are both zero here, so Case 4 must equal Case 6 under the same EF and thermal case."
+4,中部,再エネ目標量!F7,115.333624,105.492337131,-9.841286869,published_scenario_equivalence,confirmed_case4_source_inconsistency,"Current and zero-nuclear outputs are both zero here, so Case 4 must equal Case 6 under the same EF and thermal case."
+13,北陸,再エネ目標量!O6,18.204178,22.028750444,3.824572444,source_cell_identified_formula_unavailable,unresolved_source_or_formula_inconsistency,"The source cell is identified, but its restricted original formula and complete inputs were not traced; the public evidence does not establish the cause."
+13,中部,再エネ目標量!O7,97.292539,82.881656643,-14.410882357,source_cell_identified_formula_unavailable,unresolved_source_or_formula_inconsistency,"The source cell is identified, but its restricted original formula and complete inputs were not traced; the public evidence does not establish the cause."
+14,北陸,再エネ目標量!P6,6.565642,10.390214444,3.824572444,source_cell_identified_formula_unavailable,unresolved_source_or_formula_inconsistency,"The source cell is identified, but its restricted original formula and complete inputs were not traced; the public evidence does not establish the cause."
+14,中部,再エネ目標量!P7,75.113095,60.702212643,-14.410882357,source_cell_identified_formula_unavailable,unresolved_source_or_formula_inconsistency,"The source cell is identified, but its restricted original formula and complete inputs were not traced; the public evidence does not establish the cause."
+15,北陸,再エネ目標量!Q6,18.204178,22.028750444,3.824572444,source_cell_identified_formula_unavailable,unresolved_source_or_formula_inconsistency,"The source cell is identified, but its restricted original formula and complete inputs were not traced; the public evidence does not establish the cause."
+15,中部,再エネ目標量!Q7,97.292539,82.881656643,-14.410882357,source_cell_identified_formula_unavailable,unresolved_source_or_formula_inconsistency,"The source cell is identified, but its restricted original formula and complete inputs were not traced; the public evidence does not establish the cause."

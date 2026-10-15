@@ -1,24 +1,23 @@
-# Source discrepancies and treatment
+# Discrepancy evidence and treatment
 
-## Canonical versus alternate version
+## Canonical versus alternate workbook
 
-The final Chapter 4 workbook is canonical because it matches the thesis narrative and stated benchmarks. Its baseline generation emissions are 413.415620 Mt CO2 and its national allowances are 64.148259 Mt (carbon-only) and 140.691812 Mt (carbon-and-food). The alternate main-data workbook reports 308.715247, 47.902268, and 105.060635 Mt respectively. The discrepancy is materially larger than rounding, so this reproduction does not mix the versions. See [`alternate_key_benchmarks.csv`](../data/derived/alternate_main_workbook/alternate_key_benchmarks.csv).
+The final Chapter 4 workbook is the canonical reported-result version. Its national baseline is 413.415620 MtCO2 and its carbon-only / carbon-and-food caps are 64.148259 / 140.691812 MtCO2. The alternate main-data workbook reports 308.715247, 47.902268, and 105.060635 MtCO2. These are materially different versions. The canonical executable model does not read alternate-workbook values; alternate numerical derivatives are context only in `data/derived/alternate_main_workbook/`.
 
-## Historical final-workbook formula/cell errors
+## Case 4: confirmed scenario-equivalence inconsistency
 
-The cached final workbook contains eight values inconsistent with its own annual equations. They are retained in [`as_reported_240.csv`](../data/derived/canonical_final_workbook/as_reported_240.csv), and equation-based values appear in the results table.
+The historical cells `再エネ目標量!F6` (Hokuriku) and `再エネ目標量!F7` (Chubu) differ from the equation-based reconstruction. In both regions currently operating nuclear output is zero, as is the zero-nuclear output. Case 4 and Case 6 therefore use the same EF case, thermal case, and nuclear output, and must produce the same reconstructed gross RE value. This is evidence from the published scenario structure, not an assertion about an unavailable original Excel formula.
 
-| Cases | Regions | Diagnostic change in gross RE requirement |
-|---|---|---:|
-| 4 | Hokuriku | +9.841287 TWh |
-| 4 | Chubu | -9.841287 TWh |
-| 13, 14, 15 | Hokuriku | +3.824572 TWh each |
-| 13, 14, 15 | Chubu | -14.410882 TWh each |
+These two rows retain the classification `confirmed_case4_source_inconsistency`. They are separately available in `results/identified_case4_cell_corrections.csv` and in the full `results/source_cell_audit.csv`.
 
-Case 4 is particularly clear: Hokuriku and Chubu have zero current nuclear generation, so Case 4 must equal Case 6 under the same EF and thermal assumptions. The two Case 4 cells transfer 9.841287 TWh between these regions. The complete eight-row audit is [`identified_workbook_formula_discrepancies.csv`](../results/identified_workbook_formula_discrepancies.csv); the required narrower Case 4 file is [`identified_case4_cell_corrections.csv`](../results/identified_case4_cell_corrections.csv).
+## Cases 13–15: unresolved source-or-formula inconsistencies
 
-## Nuclear and renewable-credit caveats
+The six Hokuriku/Chubu differences in Cases 13–15 are **not** labelled workbook formula errors. The public derivative identifies the source cells, reported values, reconstruction, and difference. It does not include the original cell formulas or a complete trace of all restricted workbook inputs. They are therefore classified `unresolved_source_or_formula_inconsistency` with evidence status `source_cell_identified_formula_unavailable`.
 
-The alternate workbook contains a current-nuclear formula defect in one Kansai entry. The final results imply the full 25.1412 TWh current Kansai output, so that final output is used. The canonical final workbook also provides only regional annual existing/FIT renewable credits; its asset-level capacities cannot be reconstructed from that result sheet. The capacity factors remain published as assumptions and MW-to-TWh nuclear conversion is tested explicitly.
+No hard-coded mismatch magnitude is used to pass QA. The verifier computes each difference from the immutable historical table and equation-based reconstruction, then accepts only the documented scenario-region classifications; any other mismatch fails validation.
 
-Pumped hydro is separately present in the alternate workbook and can be a generation-accounting ambiguity because it consumes electricity. No net-energy loss reconciliation is available in the source; the canonical annual credit is reproduced as supplied.
+## Cap allocation and renewable-credit limitations
+
+Tokyo and Chubu do not exactly reconstruct from the visible BC table. This is documented as a cap-allocation audit deviation, and final-workbook regional caps remain canonical inputs.
+
+The canonical existing/FIT renewable credit is a workbook-derived annual value. Technology-level capacities are not complete public inputs, so capacity-factor assumptions are historical context rather than a canonical renewable-credit reconstruction.

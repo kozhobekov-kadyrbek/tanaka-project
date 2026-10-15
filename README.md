@@ -1,77 +1,71 @@
 # Tanaka Project
 
-Reproducible reconstruction of Hiroaki Tanaka's annual ecological-footprint and renewable-electricity scenario study for Japan.
+Reproducible reconstruction of Hiroaki Tanaka's 24-case renewable-electricity study for ten Japanese utility regions.
 
 ## Scope
 
-This repository reproduces Tanaka's deterministic 2016 annual accounting model for ten Japanese utility regions. It implements 24 prescribed scenarios:
+This is a **deterministic annual energy-accounting reproduction**. It applies prescribed annual assumptions and calculates residual renewable generation. It is not an optimisation model and does not solve a cost, capacity, or dispatch objective. It does not model hourly dispatch, BESS, storage, unit commitment, transmission flow or losses, GIS siting, lifecycle assessment, or physical exports.
+
+A negative annual RE residual is an arithmetic surplus under the stated annual assumptions. It does **not** represent transferable electricity, physical export, or a demonstrated transmission outcome.
+
+## Annual equations and source treatment
+
+The visible biocapacity table is audited using:
 
 \[
-2\ \text{ecological-footprint cases}
-\times 4\ \text{thermal cases}
-\times 3\ \text{nuclear cases}
-=24
+C_{j}^{formula}=C_{Japan}\frac{BC_j}{\sum_m BC_m}
 \]
 
-It is not an hourly dispatch, BESS, unit-commitment, power-flow, transmission-loss, GIS-siting, cost-minimisation, or lifecycle-assessment model.
-
-## Core equations
+The executable canonical reproduction uses the **published final-workbook regional cap** \(C_j^{canonical}\), not the formula-audit value. Thermal, nuclear, and annual residual equations are:
 
 \[
-C^{cap}_{j}=C^{cap}_{Japan}\frac{BC_j}{\sum_mBC_m}
-\]
-
-\[
-T_{j,s}=\frac{C^{cap}_{j}}{\sum_k w_{jks}e_k}
-\]
-
-\[
-N_{j,s}=\sum_{u\in s}K_u\times8760\times0.70
+T_{js}=\frac{1000C_j^{canonical}}{\sum_k w_{jks}e_k},\quad
+N_{js}=\frac{K_{js}\times8760\times0.70}{10^6},\quad
+R^{gross}_{js}=D_j-T_{js}-N_{js}
 \]
 
 \[
-R^{gross}_{j,s}=D_j-T_{j,s}-N_{j,s}
+A_{js}=R^{gross}_{js}-\bar R_j^{existing+FIT},\qquad A_{js}^{build}=\max(0,A_{js})
 \]
 
-\[
-R^{existing+FIT}_j=\sum_pK_{jp}\times8760\times cf_p
-\]
+\(\bar R_j^{existing+FIT}\) is a **workbook-derived annual credit read directly from configuration**. The canonical model does not recalculate it from technology-level renewable capacities. Capacity factors in `config/renewable_capacity_factors.csv` are historical context only.
 
-\[
-A_{j,s}=R^{gross}_{j,s}-R^{existing+FIT}_j,
-\qquad
-A^{build}_{j,s}=\max(0,A_{j,s})
-\]
+## Run
 
-## Canonical reproduction basis
-
-The final Chapter 4 workbook and thesis narrative are the canonical reported-result version. A separate main-data workbook contains materially different values and is preserved as an alternate version. The project must never mix these two source versions.
-
-## Key reported benchmarks
-
-- 2016 annual electricity quantity: **655.61 TWh**
-- Final-workbook baseline generation emissions: **413.416 Mt-CO2/year**
-- Carbon-only cap: **64.148 Mt-CO2/year**
-- Carbon-plus-food cap: **140.692 Mt-CO2/year**
-- Case 6 positive additional RE requirement: **388.40 TWh/year**
-- Case 20 positive additional RE requirement: **148.90 TWh/year**
-- Thermal-retired cases: **429.81**, **313.47**, and **485.80 TWh/year** for current nuclear, all-candidate nuclear, and nuclear-retired assumptions respectively.
-
-## Important limits
-
-Tanaka's results are annual energy-accounting residuals. A negative residual does not demonstrate physically exportable electricity. The model does not calculate hourly adequacy, renewable curtailment, storage, transmission capacity, power flow, or transmission losses.
-
-## Repository policy
-
-Only original code, derived tables, reproducible configuration files, source metadata, citations, and documentation may be published. Do not upload the original thesis, restricted Excel workbooks, proprietary databases, or third-party data without permission.
-
-See [CODEX_TANAKA_REPRODUCTION_DIRECTIVE.md](CODEX_TANAKA_REPRODUCTION_DIRECTIVE.md) for the build specification.
-
-## Run and inspect
+Run the complete Python reproduction and QA from the repository root:
 
 ```powershell
 python src/python/verify_results.py
+```
+
+Run the Python test suite:
+
+```powershell
+python -m unittest discover -s tests -p "test_python_reproduction.py"
+```
+
+Run the MATLAB test suite:
+
+```powershell
 matlab -batch "addpath('src/matlab'); results=runtests('tests'); assertSuccess(results);"
 ```
 
-The executable method, inputs, source boundaries, and discrepancies are documented in [docs/REPRODUCTION.md](docs/REPRODUCTION.md), [docs/ASSUMPTIONS_AND_METHOD.md](docs/ASSUMPTIONS_AND_METHOD.md), and [docs/DISCREPANCIES.md](docs/DISCREPANCIES.md).
+## Outputs
+
+| File | Meaning |
+|---|---|
+| `data/derived/canonical_final_workbook/as_reported_240.csv` | Historical final-workbook-derived values. Never overwritten by the reproduction. |
+| `results/all_24_scenarios_by_region.csv` | Diagnostic equation-based reconstruction for all 240 rows, alongside historical values. |
+| `results/source_cell_audit.csv` | Eight source-cell differences, their evidence status, and classification. |
+| `results/QA_SUMMARY.csv` | Check status, tolerance, and explanation. |
+| `results/regional_CO2_baseline_and_caps.csv` | Formula audit and canonical regional cap inputs. |
+| `results/reproduction_summary.csv` and `results/matlab_annual_accounting_results.csv` | Case totals and the independent MATLAB cross-check. |
+| `results/figures/*.png` | Derived charts of annual positive additional RE requirements. |
+
+The two Case 4 Hokuriku/Chubu differences are confirmed by scenario equivalence. The six Cases 13–15 differences are classified `unresolved_source_or_formula_inconsistency`: their source cells are known, but the restricted original Excel formulas and complete inputs were not traced. See [docs/DISCREPANCIES.md](docs/DISCREPANCIES.md).
+
+## Limitations
+
+The final workbook's regional caps are canonical inputs. Tokyo and Chubu do not exactly reconstruct from the visible biocapacity table, so the formula is an audit rather than an independent cap reconstruction. The public project cannot reproduce raw Excel formulas, underlying technology-level renewable capacities, or other restricted source information. See [docs/REPRODUCTION_STATUS.md](docs/REPRODUCTION_STATUS.md).
+
+Only original code, derived results, metadata, and documentation are published. Original thesis, DOCX, XLSX, and other restricted sources are excluded.

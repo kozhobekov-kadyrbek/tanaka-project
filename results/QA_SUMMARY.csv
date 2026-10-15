@@ -1,0 +1,11 @@
+check,status,tolerance,explanation
+scenario_matrix_24_x_10,PASS,exact,Produced 240 prescribed scenario-region rows.
+annual_energy_identity,PASS,1e-10 TWh,All rows satisfy demand = thermal + nuclear + gross RE.
+fuel_share_normalization,PASS,1e-8,Every nonzero thermal mix sums to one after fossil-only normalization.
+nuclear_MW_to_TWh,PASS,1.1e-06 TWh,All annual nuclear values equal MW × hours × CF / 1e6.
+CO2_cap_allocation_audit,PASS_WITH_DOCUMENTED_DEVIATION,1e-9 Mt for reconstructing regions,Only Tokyo and Chubu are flagged (4 region-case entries); reported final-workbook caps remain canonical inputs.
+canonical_workbook_derived_input_integrity,PASS,exact schema and source-cell coverage,Historical table has 240 unique scenario-region rows with source-cell references.
+Case_4_Hokuriku_Chubu,PASS_WITH_CONFIRMED_INCONSISTENCY,1.1e-06 TWh,Two reported Case 4 values conflict with the published Case 4 = Case 6 scenario equivalence.
+Cases_13_to_15_Hokuriku_Chubu,PASS_WITH_UNRESOLVED_INCONSISTENCY,1.1e-06 TWh,Six mismatches remain unresolved because restricted original formulas were not traced.
+canonical_alternate_input_separation,PASS,exact provenance labels,Executable canonical configuration contains no alternate-workbook-labelled input.
+reported_diagnostic_comparison,PASS_WITH_UNRESOLVED_INCONSISTENCY,1.1e-06 TWh,232 rows agree; 8 are documented in source_cell_audit.csv.
