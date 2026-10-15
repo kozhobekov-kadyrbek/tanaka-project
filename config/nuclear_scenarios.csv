@@ -1,0 +1,31 @@
+region,nuclear_case,equivalent_capacity_mw,annual_generation_twh,capacity_factor,hours_per_year,source_basis
+北海道,currently_operating,0,0,0.70,8760,Final Chapter 4 workbook reported current operation
+東北,currently_operating,0,0,0.70,8760,Final Chapter 4 workbook reported current operation
+東京,currently_operating,0,0,0.70,8760,Final Chapter 4 workbook reported current operation
+北陸,currently_operating,0,0,0.70,8760,Final Chapter 4 workbook reported current operation
+中部,currently_operating,0,0,0.70,8760,Final Chapter 4 workbook reported current operation
+関西,currently_operating,4100.000000,25.141200,0.70,8760,Final Chapter 4 workbook reported current operation
+中国,currently_operating,0,0,0.70,8760,Final Chapter 4 workbook reported current operation
+四国,currently_operating,890.000000,5.457480,0.70,8760,Final Chapter 4 workbook reported current operation
+九州,currently_operating,4140.000000,25.386480,0.70,8760,Final Chapter 4 workbook reported current operation
+沖縄,currently_operating,0,0,0.70,8760,Final Chapter 4 workbook reported current operation
+北海道,all_candidate_units,2070.000000,12.693240,0.70,8760,Alternate main-data workbook annual calculation
+東北,all_candidate_units,1925.000000,11.804100,0.70,8760,Alternate main-data workbook annual calculation
+東京,all_candidate_units,2712.000000,16.629984,0.70,8760,Alternate main-data workbook annual calculation
+北陸,all_candidate_units,1898.000000,11.638536,0.70,8760,Alternate main-data workbook annual calculation
+中部,all_candidate_units,3617.000000,22.179444,0.70,8760,Alternate main-data workbook annual calculation
+関西,all_candidate_units,6578.000000,40.336296,0.70,8760,Alternate main-data workbook annual calculation
+中国,all_candidate_units,4939.000000,30.285948,0.70,8760,Alternate main-data workbook annual calculation
+四国,all_candidate_units,890.000000,5.457480,0.70,8760,Alternate main-data workbook annual calculation
+九州,all_candidate_units,4140.000000,25.386480,0.70,8760,Alternate main-data workbook annual calculation
+沖縄,all_candidate_units,0,0,0.70,8760,Alternate main-data workbook annual calculation
+北海道,zero_nuclear,0,0,0.70,8760,Counterfactual zero nuclear
+東北,zero_nuclear,0,0,0.70,8760,Counterfactual zero nuclear
+東京,zero_nuclear,0,0,0.70,8760,Counterfactual zero nuclear
+北陸,zero_nuclear,0,0,0.70,8760,Counterfactual zero nuclear
+中部,zero_nuclear,0,0,0.70,8760,Counterfactual zero nuclear
+関西,zero_nuclear,0,0,0.70,8760,Counterfactual zero nuclear
+中国,zero_nuclear,0,0,0.70,8760,Counterfactual zero nuclear
+四国,zero_nuclear,0,0,0.70,8760,Counterfactual zero nuclear
+九州,zero_nuclear,0,0,0.70,8760,Counterfactual zero nuclear
+沖縄,zero_nuclear,0,0,0.70,8760,Counterfactual zero nuclear

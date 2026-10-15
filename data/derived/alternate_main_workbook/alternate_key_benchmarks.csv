@@ -1,0 +1,4 @@
+metric,value,canonical_final_value,difference,note
+alternate_main_workbook_national_2016_CO2_Mt,308.715247014,413.415620233,-104.700373219,Different workbook/version; not used by canonical reproduction
+alternate_main_workbook_carbon_only_cap_Mt,47.902267785,64.148259403,-16.245991618,Different workbook/version; not used by canonical reproduction
+alternate_main_workbook_carbon_and_food_cap_Mt,105.060634726,140.691811913,-35.631177187,Different workbook/version; not used by canonical reproduction

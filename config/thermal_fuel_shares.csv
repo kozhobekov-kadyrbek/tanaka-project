@@ -1,0 +1,14 @@
+region,thermal_case,coal_share,lng_share,oil_share,source_basis
+北海道,2016_mix,0.557798735707,0,0.274101556276,2016 regional shares; normalized within fossil fuels
+東北,2016_mix,0.323326475283,0.499981132946,0.052542772470,2016 regional shares; normalized within fossil fuels
+東京,2016_mix,0.116054874352,0.790742715376,0.042787981264,2016 regional shares; normalized within fossil fuels
+北陸,2016_mix,0.693846885493,0,0.099014140601,2016 regional shares; normalized within fossil fuels
+中部,2016_mix,0.246092587611,0.680709393914,0.000729386001,2016 regional shares; normalized within fossil fuels
+関西,2016_mix,0.138631560882,0.651302795632,0.069270934439,2016 regional shares; normalized within fossil fuels
+中国,2016_mix,0.437776944669,0.334712392276,0.125853921137,2016 regional shares; normalized within fossil fuels
+四国,2016_mix,0.386421715030,0.120256072461,0.149959080960,2016 regional shares; normalized within fossil fuels
+九州,2016_mix,0.265633547735,0.406230262621,0.039548281375,2016 regional shares; normalized within fossil fuels
+沖縄,2016_mix,0.565676868608,0.270791651039,0.163231421743,2016 regional shares; normalized within fossil fuels
+all,2030_mix,0.26,0.27,0.03,2030 national mix; normalized within fossil fuels
+all,lng_only,0,1,0,Counterfactual LNG-only thermal generation
+all,zero_thermal,0,0,0,Counterfactual no thermal generation

@@ -1,0 +1,8 @@
+technology,capacity_factor,source_basis
+conventional_hydro,0.45,Tanaka thesis annual accounting assumption
+pumped_hydro,0.06,Alternate main-data workbook capacity-to-energy audit
+wind,0.20,Tanaka thesis annual accounting assumption
+solar_lt10kw,0.12,Tanaka thesis annual accounting assumption
+solar_ge10kw,0.14,Tanaka thesis annual accounting assumption
+geothermal,0.83,Tanaka thesis annual accounting assumption
+nuclear,0.70,Tanaka thesis annual accounting assumption

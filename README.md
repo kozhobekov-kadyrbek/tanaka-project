@@ -66,3 +66,12 @@ Tanaka's results are annual energy-accounting residuals. A negative residual doe
 Only original code, derived tables, reproducible configuration files, source metadata, citations, and documentation may be published. Do not upload the original thesis, restricted Excel workbooks, proprietary databases, or third-party data without permission.
 
 See [CODEX_TANAKA_REPRODUCTION_DIRECTIVE.md](CODEX_TANAKA_REPRODUCTION_DIRECTIVE.md) for the build specification.
+
+## Run and inspect
+
+```powershell
+python src/python/verify_results.py
+matlab -batch "addpath('src/matlab'); results=runtests('tests'); assertSuccess(results);"
+```
+
+The executable method, inputs, source boundaries, and discrepancies are documented in [docs/REPRODUCTION.md](docs/REPRODUCTION.md), [docs/ASSUMPTIONS_AND_METHOD.md](docs/ASSUMPTIONS_AND_METHOD.md), and [docs/DISCREPANCIES.md](docs/DISCREPANCIES.md).
