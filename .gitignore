@@ -1,0 +1,27 @@
+# Restricted / source-controlled materials
+data/raw/
+data/private/
+source_extracts/
+*.xlsx
+*.xls
+*.pdf
+*.docx
+*.pptx
+
+# MATLAB and Python runtime output
+*.asv
+*.mat
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Solver and temporary files
+*.log
+*.lp
+*.mps
+*.sol
+.build/
+tmp/
+
+# Publish only derived, permitted CSV/JSON/SVG/PNG outputs
