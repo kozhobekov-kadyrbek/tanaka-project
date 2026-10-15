@@ -1,0 +1,19 @@
+case,land_category,earth_equivalents,gha_per_person,evidence_basis,canonical_model_role,world_biocapacity_gha_per_person,identity_check_earths
+2016_baseline,built_up,0.033286196749079,0.054248202804760,Alternate main-data workbook national EF table; agrees with presentation rounded value,historical_context,1.62975071059329,0.033286196749079
+2016_baseline,carbon_uptake,2.079318969990590,3.388771568892280,Alternate main-data workbook national EF table; agrees with presentation 2.08 Earths,historical_context,1.62975071059329,2.079318969990595
+2016_baseline,cropland,0.260950670792048,0.425284541153137,Alternate main-data workbook national EF table,historical_context,1.62975071059329,0.260950670792049
+2016_baseline,fishing_grounds,0.173303039788860,0.282440752243872,Alternate main-data workbook national EF table,historical_context,1.62975071059329,0.173303039788860
+2016_baseline,forest_products,0.145824591640796,0.237657731848564,Alternate main-data workbook national EF table,historical_context,1.62975071059329,0.145824591640796
+2016_baseline,grazing_land,0.063994831107881,0.104295621472367,Alternate main-data workbook national EF table,historical_context,1.62975071059329,0.063994831107881
+carbon_only,built_up,0.033286196749079,0.054248202804760,One-Earth EF case; non-carbon categories held at 2016 contribution,historical_target_context,1.62975071059329,0.033286196749079
+carbon_only,carbon_uptake,0.322640669921336,0.525823861070592,One-Earth EF case; residual one-Earth budget assigned to carbon,historical_target_context,1.62975071059329,0.322640669921336
+carbon_only,cropland,0.260950670792048,0.425284541153136,One-Earth EF case; non-carbon categories held at 2016 contribution,historical_target_context,1.62975071059329,0.260950670792048
+carbon_only,fishing_grounds,0.173303039788860,0.282440752243872,One-Earth EF case; non-carbon categories held at 2016 contribution,historical_target_context,1.62975071059329,0.173303039788860
+carbon_only,forest_products,0.145824591640796,0.237657731848564,One-Earth EF case; non-carbon categories held at 2016 contribution,historical_target_context,1.62975071059329,0.145824591640796
+carbon_only,grazing_land,0.063994831107881,0.104295621472367,One-Earth EF case; non-carbon categories held at 2016 contribution,historical_target_context,1.62975071059329,0.063994831107881
+carbon_and_food,built_up,0.033286196749079,0.054248202804760,One-Earth EF case; built-up contribution held at 2016 level,historical_target_context,1.62975071059329,0.033286196749079
+carbon_and_food,carbon_uptake,0.707624818983454,1.153252051571732,One-Earth EF case; residual after food-related reductions assigned to carbon,historical_target_context,1.62975071059329,0.707624818983454
+carbon_and_food,cropland,0.046611322837460,0.075964836516043,Food-related EF set to the corresponding Japanese BC contribution,historical_target_context,1.62975071059329,0.046611322837460
+carbon_and_food,fishing_grounds,0.061839131697188,0.100782368825964,Food-related EF set to the corresponding Japanese BC contribution,historical_target_context,1.62975071059329,0.061839131697188
+carbon_and_food,forest_products,0.145824591640796,0.237657731848564,Forest-product contribution held at 2016 level,historical_target_context,1.62975071059329,0.145824591640796
+carbon_and_food,grazing_land,0.004813938092023,0.007845519026227,Food-related EF set to the corresponding Japanese BC contribution,historical_target_context,1.62975071059329,0.004813938092023

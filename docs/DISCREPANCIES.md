@@ -12,7 +12,7 @@ These two rows retain the classification `confirmed_case4_source_inconsistency`.
 
 ## Cases 13–15: unresolved source-or-formula inconsistencies
 
-The six Hokuriku/Chubu differences in Cases 13–15 are **not** labelled workbook formula errors. The public derivative identifies the source cells, reported values, reconstruction, and difference. It does not include the original cell formulas or a complete trace of all restricted workbook inputs. They are therefore classified `unresolved_source_or_formula_inconsistency` with evidence status `source_cell_identified_formula_unavailable`.
+The six Hokuriku/Chubu differences in Cases 13–15 are **not** labelled workbook formula errors. A read-only audit found that the final-workbook source cells are stored numeric constants rather than formulas. The public derivative identifies the cells, reported values, reconstruction, and difference, but there is no formula dependency chain that establishes how those constants were produced. They are therefore classified `unresolved_source_or_formula_inconsistency` with evidence status `source_cell_identified_formula_unavailable`.
 
 No hard-coded mismatch magnitude is used to pass QA. The verifier computes each difference from the immutable historical table and equation-based reconstruction, then accepts only the documented scenario-region classifications; any other mismatch fails validation.
 

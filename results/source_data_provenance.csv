@@ -1,0 +1,15 @@
+variable,unit,public_source,treatment,restricted_source_role,limitation
+annual demand D_j,TWh/year,config/regional_demand_and_existing_RE.csv,workbook-derived direct input,Final Chapter 4 workbook,Annual aggregate only.
+existing plus FIT renewable credit Rbar_j,TWh/year,config/regional_demand_and_existing_RE.csv,workbook-derived direct input,Final Chapter 4 workbook,Not recalculated from technology capacity in the canonical model.
+regional canonical CO2 caps,Mt CO2/year,config/EF_and_biocapacity_assumptions.csv,workbook-derived direct input,Final Chapter 4 workbook,Tokyo and Chubu do not reconstruct from the visible BC table.
+regional baseline generation CO2,Mt CO2/year,config/EF_and_biocapacity_assumptions.csv,workbook-derived direct input,Final Chapter 4 workbook,Operational fossil generation boundary.
+regional biocapacity components,gha,config/EF_and_biocapacity_assumptions.csv,workbook-derived then summed,Final/alternate workbook BC tables,Fishing and carbon uptake land excluded from regional BC.
+national EF land categories,Earths; gha/person,config/ecological_footprint_scenarios.csv,workbook-derived historical context,Alternate main-data workbook and presentation,Used to explain cap ratios; regional canonical caps remain direct inputs.
+fossil emission factors,g CO2/kWh,config/fossil_emission_factors.csv,direct assumption,Thesis/Table 3-1-derived,Direct combustion only.
+thermal fuel shares,fraction,config/thermal_fuel_shares.csv,normalized in calculation,2016 regional data and 2030 policy mix,2030 26/27/3 shares are normalized within the 56% fossil subtotal.
+nuclear annual generation,TWh/year,config/nuclear_scenarios.csv,canonical scenario input,Final Chapter 4 workbook,"Equivalent MW values are conversion checks, not recovered unit records."
+nuclear capacity factor,fraction,config/nuclear_scenarios.csv,calculated conversion check,Thesis scenario assumption,Uniform 70% for every included unit.
+renewable capacity factors,fraction,config/renewable_capacity_factors.csv,historical context,Thesis/supporting workbooks,Not used to reconstruct canonical existing/FIT credit.
+historical 240 reported results,TWh/year,data/derived/canonical_final_workbook/as_reported_240.csv,restricted-workbook numerical derivative,Final Chapter 4 workbook,Eight differences require separate evidence classifications.
+alternate national benchmarks,Mt CO2/year,data/derived/alternate_main_workbook/alternate_key_benchmarks.csv,isolated historical comparison,Alternate main-data workbook,Never mixed into canonical calculations.
+presentation/chart metadata,count and source references,results/source_figure_audit.csv,restricted-source metadata derivative,Final presentation and conference graph workbook,Exact original artwork is not redistributed.

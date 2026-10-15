@@ -1,0 +1,11 @@
+region,forest_gha,cropland_gha,grazing_gha,built_up_gha,total_biocapacity_gha,share_of_visible_national_BC,excluded_land_classes,evidence_status
+北海道,9335187.684006,1742811.868483,519677.235374,498073.299780,12095750.087643,0.200315588271,fishing grounds; carbon uptake land,workbook-derived components; formula-audit input
+東北,9398370.003356,2418109.384168,151332.609674,1021741.694017,12989553.691215,0.215117712434,fishing grounds; carbon uptake land,workbook-derived components; formula-audit input
+東京,3041526.650946,1576779.018552,54271.325865,1647223.743610,6319800.738973,0.104661107712,fishing grounds; carbon uptake land,workbook-derived components; formula-audit input
+北陸,1449683.216204,372802.384231,8052.704440,242534.772065,2073073.076940,0.034331798353,fishing grounds; carbon uptake land,workbook-derived components; formula-audit input
+中部,5170419.800166,791447.566161,85210.507603,1042937.675450,7090015.549380,0.117416499624,fishing grounds; carbon uptake land,workbook-derived components; formula-audit input
+関西,3174911.547352,500371.050779,46841.564617,715661.061004,4437785.223752,0.073493380011,fishing grounds; carbon uptake land,workbook-derived components; formula-audit input
+中国,4048933.631698,563664.411618,40214.003664,519493.725756,5172305.772736,0.085657645543,fishing grounds; carbon uptake land,workbook-derived components; formula-audit input
+四国,2441294.617118,276964.564805,38866.109094,271827.590350,3028952.881367,0.050161955553,fishing grounds; carbon uptake land,workbook-derived components; formula-audit input
+九州,4636880.214541,1220333.030319,104666.340677,881533.994198,6843413.579735,0.113332567809,fishing grounds; carbon uptake land,workbook-derived components; formula-audit input
+沖縄,184281.764772,81641.702146,8962.855145,57931.941842,332818.263905,0.005511744690,fishing grounds; carbon uptake land,workbook-derived components; formula-audit input

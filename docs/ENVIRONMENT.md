@@ -5,6 +5,7 @@
 | Python | 3.11.3 | Reproduction, QA, public tests, figures |
 | matplotlib | 3.10.8 | PNG figures |
 | openpyxl | 3.1.5 | Optional restricted-workbook numerical extraction only |
+| python-pptx | 1.0.2 | Read-only local presentation evidence audit only; not required by the public run |
 | MATLAB | R2025a | Independent annual calculation and tests |
 | MATLAB toolboxes | None required beyond base MATLAB | `readtable`, `writetable`, and unit-test framework are used |
 

@@ -12,3 +12,5 @@ The local Paper 3 workspace was searched before implementation. The relevant sou
 | `New folder/Tanaka_detailed_analysis.md` and CSVs | Existing local analytical notes | Used as a cross-check; this repository contains an independently generated implementation |
 
 The SHA-256 fingerprints, access date, and derived outputs are listed in [`DATA_MANIFEST.csv`](../DATA_MANIFEST.csv). All published files were created for this repository or are numerical derivatives, source metadata, or test artifacts.
+
+The complete 2026-10-15 folder audit covers 437 files and is summarized in [SOURCE_FOLDER_PUBLIC_INVENTORY.md](SOURCE_FOLDER_PUBLIC_INVENTORY.md). Its full path/size/hash ledger remains private and untracked.

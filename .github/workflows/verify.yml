@@ -14,7 +14,7 @@ jobs:
           python-version: "3.11"
       - name: Install dependencies
         run: pip install -r requirements.txt
+      - name: Reproduce complete public analysis package
+        run: python src/python/generate_publication_outputs.py
       - name: Run public Python tests
         run: python -m unittest discover -s tests -p "test_python_reproduction.py"
-      - name: Reproduce annual results and QA
-        run: python src/python/verify_results.py

@@ -1,0 +1,33 @@
+source_id,source_chart_id,source_location,topic,reproduction_status,public_figure_stem,explanation
+final_presentation,chart1,slide 3,Japan CO2 sector breakdown,not_reproducible_external_source_dependency,,Depends on an external embedded workbook not in the canonical public inputs.
+final_presentation,chart2,slide 8,Regional CO2 cap case 1,reproduced_from_canonical_public_configuration,fig02_regional_co2_baseline_and_caps,Canonical regional cap theme reproduced.
+final_presentation,chart3,slide 8,Regional CO2 cap case 2,reproduced_from_canonical_public_configuration,fig02_regional_co2_baseline_and_caps,Canonical regional cap theme reproduced.
+final_presentation,chart4,slide 8,Regional biocapacity,reproduced_from_canonical_public_configuration,fig01_regional_biocapacity_components,Four visible BC components reproduced.
+final_presentation,chart5,slide 12,Gross renewable targets,reproduced_from_canonical_public_configuration,fig06_annual_energy_balance_all_24,All 24 canonical diagnostic gross totals reproduced.
+final_presentation,chart6,slide 14,Additional renewable needs,reproduced_from_canonical_public_configuration,fig05_positive_additional_re_all_24,All 24 positive regional shortfall sums reproduced.
+final_presentation,chart7,slide 19,Regional biocapacity,reproduced_from_canonical_public_configuration,fig01_regional_biocapacity_components,Duplicate BC theme.
+final_presentation,chart8,slide 22,Renewable introduction shares,not_reproducible_without_restricted_technology_data,,Technology-specific capacity/output details are not complete public canonical inputs.
+final_presentation,chart9,slide 23,Additional renewable capacity,not_reproducible_without_restricted_technology_data,,Requires an unverified technology allocation of the annual residual.
+final_presentation,chart10,slide 23,Additional renewable capacity alternate panel,not_reproducible_without_restricted_technology_data,,Requires an unverified technology allocation of the annual residual.
+final_presentation,chart11,slide 24,Japan EF and BC,reproduced_as_historical_context,fig04_national_ef_and_co2_pathway,One-Earth category pathway reproduced from public context config.
+final_presentation,chart12,slide 26,Thermal generation EF case 1,reproduced_from_canonical_public_configuration,fig06_annual_energy_balance_all_24,Thermal annual totals reproduced.
+final_presentation,chart13,slide 26,Thermal generation EF case 2,reproduced_from_canonical_public_configuration,fig06_annual_energy_balance_all_24,Thermal annual totals reproduced.
+final_presentation,chart14,slide 27,Nuclear generation cases,reproduced_from_canonical_public_configuration,fig12_regional_nuclear_scenarios,Regional nuclear annual scenario inputs reproduced.
+final_presentation,chart15,slide 28,Utility-owned renewable output by technology,not_reproducible_without_restricted_technology_data,,Canonical model exposes only the aggregated annual credit.
+final_presentation,chart16,slide 28,FIT-certified renewable output by technology,not_reproducible_without_restricted_technology_data,,Canonical model exposes only the aggregated annual credit.
+final_presentation,chart17,slide 35,Gross renewable cases 1-12,reproduced_from_canonical_public_configuration,fig05_positive_additional_re_all_24,Scenario results reproduced; public chart reports positive additional need.
+final_presentation,chart18,slide 36,Gross renewable cases 13-24,reproduced_from_canonical_public_configuration,fig05_positive_additional_re_all_24,Scenario results reproduced; public chart reports positive additional need.
+conference_graph_workbook,chart1,embedded chart XML,Regional generation CO2,reproduced_from_canonical_public_configuration,fig02_regional_co2_baseline_and_caps,The chart's annual accounting theme is reconstructed from canonical public inputs.
+conference_graph_workbook,chart2,embedded chart XML,Additional RE cases 1-12,reproduced_from_canonical_public_configuration,fig05_positive_additional_re_all_24,The chart's annual accounting theme is reconstructed from canonical public inputs.
+conference_graph_workbook,chart3,embedded chart XML,Additional RE cases 13-24,reproduced_from_canonical_public_configuration,fig05_positive_additional_re_all_24,The chart's annual accounting theme is reconstructed from canonical public inputs.
+conference_graph_workbook,chart4,embedded chart XML,Additional RE all cases,reproduced_from_canonical_public_configuration,fig05_positive_additional_re_all_24,The chart's annual accounting theme is reconstructed from canonical public inputs.
+conference_graph_workbook,chart5,embedded chart XML,Regional EF targets,reproduced_from_canonical_public_configuration,fig02_regional_co2_baseline_and_caps,The chart's annual accounting theme is reconstructed from canonical public inputs.
+conference_graph_workbook,chart6,embedded chart XML,Regional CO2 targets,reproduced_from_canonical_public_configuration,fig02_regional_co2_baseline_and_caps,The chart's annual accounting theme is reconstructed from canonical public inputs.
+conference_graph_workbook,chart7,embedded chart XML,Renewable target cases 1-12,reproduced_from_canonical_public_configuration,fig06_annual_energy_balance_all_24,The chart's annual accounting theme is reconstructed from canonical public inputs.
+conference_graph_workbook,chart8,embedded chart XML,Renewable target selected cases,reproduced_from_canonical_public_configuration,fig07_regional_case6_case20,The chart's annual accounting theme is reconstructed from canonical public inputs.
+conference_graph_workbook,chart9,embedded chart XML,Renewable target selected cases alternate,reproduced_from_canonical_public_configuration,fig07_regional_case6_case20,The chart's annual accounting theme is reconstructed from canonical public inputs.
+conference_graph_workbook,chart10,embedded chart XML,Renewable target selected cases duplicate,reproduced_from_canonical_public_configuration,fig07_regional_case6_case20,The chart's annual accounting theme is reconstructed from canonical public inputs.
+conference_graph_workbook,chart11,embedded chart XML,Historical estimate panel,historical_source_version_not_used,,Exact series is retained as noncanonical historical source context.
+conference_graph_workbook,chart12,embedded chart XML,Historical estimate subset,historical_source_version_not_used,,Exact series is retained as noncanonical historical source context.
+conference_graph_workbook,chart13,embedded chart XML,Historical estimate selected cases,historical_source_version_not_used,,Exact series is retained as noncanonical historical source context.
+conference_graph_workbook,chart14,embedded chart XML,Historical additional RE selected cases,historical_source_version_not_used,,Exact series is retained as noncanonical historical source context.

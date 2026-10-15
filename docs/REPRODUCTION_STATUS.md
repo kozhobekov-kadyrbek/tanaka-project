@@ -12,6 +12,7 @@
 - Final-workbook regional demand, existing-plus-FIT annual RE credit, regional CO2 caps, baseline emissions, nuclear annual scenario quantities, and historical 240 reported values.
 - Source-cell references for the historical gross-RE values.
 - The canonical versus alternate national benchmark comparison.
+- Slide and embedded-chart counts, source references, and evidence-status metadata for the named final presentation and conference graph workbook.
 
 These numerical derivatives are published as permitted CSVs, but their original DOCX/XLSX sources are not included.
 
@@ -22,3 +23,4 @@ These numerical derivatives are published as permitted CSVs, but their original 
 - Unit-level nuclear source records beyond equivalent-capacity conversion checks.
 - A formula-level explanation for the six Cases 13–15 Hokuriku/Chubu inconsistencies.
 - Any missing metadata, source licences, or workbook revisions not present in the public derivative tables.
+- Exact original chart artwork and technology-level chart series that cannot be rebuilt from canonical public inputs.

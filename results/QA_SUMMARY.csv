@@ -9,3 +9,6 @@ Case_4_Hokuriku_Chubu,PASS_WITH_CONFIRMED_INCONSISTENCY,1.1e-06 TWh,Two reported
 Cases_13_to_15_Hokuriku_Chubu,PASS_WITH_UNRESOLVED_INCONSISTENCY,1.1e-06 TWh,Six mismatches remain unresolved because restricted original formulas were not traced.
 canonical_alternate_input_separation,PASS,exact provenance labels,Executable canonical configuration contains no alternate-workbook-labelled input.
 reported_diagnostic_comparison,PASS_WITH_UNRESOLVED_INCONSISTENCY,1.1e-06 TWh,232 rows agree; 8 are documented in source_cell_audit.csv.
+extended_publication_tables,PASS,all required files present,"Generated scenario, provenance, EF, BC, fossil, nuclear, demand, and cap-audit tables."
+redrawn_public_figures,PASS,12 figures in PNG and SVG,Generated 12 original redrawn figures from public configuration and derived results.
+restricted_source_boundary,PASS,no restricted extensions tracked,Publication generator reads no restricted source files; source chart audit contains metadata and status only.

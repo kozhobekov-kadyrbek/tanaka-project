@@ -72,6 +72,14 @@ verifyTrue(testCase, all(contains(regional.canonical_source_basis, "Final Chapte
 verifyFalse(testCase, any(contains(lower(nuclear.source_basis), "alternate")));
 end
 
+function testPublishedCase6AndCase20Benchmarks(testCase)
+projectRoot(); results = run_tanaka_reproduction();
+case6 = sum(results.positive_additional_RE_TWh(results.scenario == 6));
+case20 = sum(results.positive_additional_RE_TWh(results.scenario == 20));
+verifyEqual(testCase, case6, 388.402687, 'AbsTol', 1e-6);
+verifyEqual(testCase, case20, 148.896509, 'AbsTol', 1e-6);
+end
+
 function root = projectRoot()
 root = fileparts(fileparts(mfilename('fullpath')));
 addpath(fullfile(root, 'src', 'matlab'));

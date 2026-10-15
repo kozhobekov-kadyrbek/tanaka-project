@@ -1,0 +1,8 @@
+technology,capacity_factor,source_basis,used_to_recalculate_canonical_existing_FIT_RE_credit,used_in_nuclear_conversion_check,interpretation
+conventional_hydro,0.45,Tanaka thesis annual accounting assumption,false,false,historical context only
+pumped_hydro,0.06,Alternate main-data workbook capacity-to-energy audit,false,false,historical context only
+wind,0.20,Tanaka thesis annual accounting assumption,false,false,historical context only
+solar_lt10kw,0.12,Tanaka thesis annual accounting assumption,false,false,historical context only
+solar_ge10kw,0.14,Tanaka thesis annual accounting assumption,false,false,historical context only
+geothermal,0.83,Tanaka thesis annual accounting assumption,false,false,historical context only
+nuclear,0.70,Tanaka thesis annual accounting assumption,false,true,executable nuclear annual conversion assumption

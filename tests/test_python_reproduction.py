@@ -59,6 +59,60 @@ class TanakaAnnualAccountingTests(unittest.TestCase):
         self.assertTrue(all("alternate" not in r["source_basis"].lower() for r in self.inputs["nuclear"]))
         self.assertTrue((ROOT / "data" / "derived" / "alternate_main_workbook" / "alternate_key_benchmarks.csv").is_file())
 
+    def test_published_headline_results(self) -> None:
+        by_case = {}
+        for row in self.calculated:
+            by_case.setdefault(int(row["scenario"]), 0.0)
+            by_case[int(row["scenario"])] += float(row["positive_additional_RE_TWh"])
+        self.assertAlmostEqual(by_case[6], 388.402687, places=6)
+        self.assertAlmostEqual(by_case[20], 148.896509, places=6)
+
+    def test_ecological_footprint_context_identity(self) -> None:
+        rows = vr.read_csv(ROOT / "config" / "ecological_footprint_scenarios.csv")
+        totals = {}
+        for row in rows:
+            totals.setdefault(row["case"], 0.0)
+            totals[row["case"]] += float(row["earth_equivalents"])
+        self.assertAlmostEqual(totals["2016_baseline"], 2.756678300069254, places=12)
+        self.assertAlmostEqual(totals["carbon_only"], 1.0, places=12)
+        self.assertAlmostEqual(totals["carbon_and_food"], 1.0, places=12)
+
+    def test_complete_publication_outputs_exist(self) -> None:
+        required = [
+            "scenario_assumptions_24.csv", "regional_demand_existing_RE_inputs.csv",
+            "regional_biocapacity_components.csv", "ecological_footprint_inputs_and_targets.csv",
+            "ecological_footprint_results_by_case.csv", "CO2_cap_allocation_audit.csv",
+            "fossil_emission_factors_and_fuel_shares.csv", "nuclear_assumptions_by_region.csv",
+            "renewable_capacity_factors.csv", "source_data_provenance.csv",
+            "source_cell_audit.csv", "QA_SUMMARY.csv", "figure_catalog.csv", "source_figure_audit.csv",
+        ]
+        self.assertTrue(all((ROOT / "results" / name).is_file() for name in required))
+        self.assertTrue(all((ROOT / "docs" / f"0{number}_{name}.md").is_file() for number, name in [
+            (1, "BACKGROUND"), (2, "CASE_STUDIES"), (3, "METHODOLOGY_AND_FORMULATIONS"),
+            (4, "SIMULATION_CONDITIONS_AND_DATA"), (5, "RESULTS"),
+            (6, "CONCLUSION_LIMITATIONS"), (7, "OVERALL_SUMMARY"),
+        ]))
+
+    def test_source_figure_audit_and_public_redraws(self) -> None:
+        source_rows = vr.read_csv(ROOT / "results" / "source_figure_audit.csv")
+        self.assertEqual(len(source_rows), 32)
+        self.assertEqual(sum(row["source_id"] == "final_presentation" for row in source_rows), 18)
+        self.assertEqual(sum(row["source_id"] == "conference_graph_workbook" for row in source_rows), 14)
+        figures = vr.read_csv(ROOT / "results" / "figure_catalog.csv")
+        self.assertEqual(len(figures), 12)
+        for row in figures:
+            self.assertTrue((ROOT / row["png"]).is_file())
+            self.assertTrue((ROOT / row["svg"]).is_file())
+
+    def test_capacity_factors_not_used_for_canonical_re_credit(self) -> None:
+        rows = vr.read_csv(ROOT / "results" / "renewable_capacity_factors.csv")
+        self.assertTrue(all(row["used_to_recalculate_canonical_existing_FIT_RE_credit"] == "false" for row in rows))
+
+    def test_no_restricted_originals_are_published(self) -> None:
+        restricted = {".xlsx", ".xls", ".docx", ".pptx", ".pdf", ".zip"}
+        found = [path for path in ROOT.rglob("*") if path.is_file() and ".git" not in path.parts and path.suffix.lower() in restricted]
+        self.assertEqual(found, [])
+
 
 if __name__ == "__main__":
     unittest.main()

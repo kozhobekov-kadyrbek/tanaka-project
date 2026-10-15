@@ -5,7 +5,7 @@
 Install the pinned dependency range in `requirements.txt`, then run:
 
 ```powershell
-python src/python/verify_results.py
+python src/python/generate_publication_outputs.py
 python -m unittest discover -s tests -p "test_python_reproduction.py"
 matlab -batch "addpath('src/matlab'); results=runtests('tests'); assertSuccess(results);"
 ```

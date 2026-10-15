@@ -1,0 +1,17 @@
+record_type,region,case_or_fuel,coal_value,LNG_value,oil_value,unit,normalization_sum,source_basis
+emission_factor,all,coal,863.8,,,g_CO2_per_kWh,,Tanaka thesis annual accounting assumption
+emission_factor,all,lng,,375.7,,g_CO2_per_kWh,,Tanaka thesis annual accounting assumption
+emission_factor,all,oil,,,695.1,g_CO2_per_kWh,,Tanaka thesis annual accounting assumption
+fuel_share,北海道,2016_mix,0.670511527743,0.000000000000,0.329488472257,normalized_share_within_fossil_generation,1.000000000000,2016 regional shares; normalized within fossil fuels
+fuel_share,東北,2016_mix,0.369157201285,0.570852218557,0.059990580158,normalized_share_within_fossil_generation,1.000000000000,2016 regional shares; normalized within fossil fuels
+fuel_share,東京,2016_mix,0.122216341420,0.832724021438,0.045059637142,normalized_share_within_fossil_generation,1.000000000000,2016 regional shares; normalized within fossil fuels
+fuel_share,北陸,2016_mix,0.875117911787,0.000000000000,0.124882088213,normalized_share_within_fossil_generation,1.000000000000,2016 regional shares; normalized within fossil fuels
+fuel_share,中部,2016_mix,0.265319962458,0.733893664135,0.000786373406,normalized_share_within_fossil_generation,1.000000000000,2016 regional shares; normalized within fossil fuels
+fuel_share,関西,2016_mix,0.161348588448,0.758029312075,0.080622099478,normalized_share_within_fossil_generation,1.000000000000,2016 regional shares; normalized within fossil fuels
+fuel_share,中国,2016_mix,0.487315890369,0.372588528121,0.140095581510,normalized_share_within_fossil_generation,1.000000000000,2016 regional shares; normalized within fossil fuels
+fuel_share,四国,2016_mix,0.588486168834,0.183139385312,0.228374445854,normalized_share_within_fossil_generation,1.000000000000,2016 regional shares; normalized within fossil fuels
+fuel_share,九州,2016_mix,0.373389138057,0.571019620474,0.055591241468,normalized_share_within_fossil_generation,1.000000000000,2016 regional shares; normalized within fossil fuels
+fuel_share,沖縄,2016_mix,0.565846655769,0.270872928794,0.163280415437,normalized_share_within_fossil_generation,1.000000000000,2016 regional shares; normalized within fossil fuels
+fuel_share,all,2030_mix,0.464285714286,0.482142857143,0.053571428571,normalized_share_within_fossil_generation,1.000000000000,2030 national mix; normalized within fossil fuels
+fuel_share,all,lng_only,0.000000000000,1.000000000000,0.000000000000,normalized_share_within_fossil_generation,1.000000000000,Counterfactual LNG-only thermal generation
+fuel_share,all,zero_thermal,0.000000000000,0.000000000000,0.000000000000,normalized_share_within_fossil_generation,0,Counterfactual no thermal generation

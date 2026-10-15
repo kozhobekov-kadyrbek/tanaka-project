@@ -1,0 +1,21 @@
+EF_case,region,baseline_generation_CO2_Mt,canonical_regional_allowance_Mt,implied_change_baseline_minus_allowance_Mt,allowance_as_share_of_baseline,interpretation,cap_source
+carbon_only,北海道,15.595860598500,12.849896318791,2.745964279709,0.823929929204,positive change is the arithmetic reduction from baseline to allowance,canonical final-workbook-derived regional input
+carbon_only,東北,31.126294878900,13.799426819342,17.326868059558,0.443336634605,positive change is the arithmetic reduction from baseline to allowance,canonical final-workbook-derived regional input
+carbon_only,東京,190.276388000000,5.947592681549,184.328795318451,0.031257649696,positive change is the arithmetic reduction from baseline to allowance,canonical final-workbook-derived regional input
+carbon_only,北陸,18.548622529500,2.202325106498,16.346297423002,0.118732542160,positive change is the arithmetic reduction from baseline to allowance,canonical final-workbook-derived regional input
+carbon_only,中部,55.738069147900,8.298299281397,47.439769866503,0.148880278924,positive change is the arithmetic reduction from baseline to allowance,canonical final-workbook-derived regional input
+carbon_only,関西,39.187366268110,4.714472405356,34.472893862754,0.120305926484,positive change is the arithmetic reduction from baseline to allowance,canonical final-workbook-derived regional input
+carbon_only,中国,22.344563141300,5.494788866101,16.849774275199,0.245911671280,positive change is the arithmetic reduction from baseline to allowance,canonical final-workbook-derived regional input
+carbon_only,四国,9.768301640400,3.217802136953,6.550499503447,0.329412650777,positive change is the arithmetic reduction from baseline to allowance,canonical final-workbook-derived regional input
+carbon_only,九州,26.260842207818,7.270086958562,18.990755249256,0.276841348081,positive change is the arithmetic reduction from baseline to allowance,canonical final-workbook-derived regional input
+carbon_only,沖縄,4.569311820600,0.353568828157,4.215742992443,0.077379010678,positive change is the arithmetic reduction from baseline to allowance,canonical final-workbook-derived regional input
+carbon_and_food,北海道,15.595860598500,28.182763068146,-12.586902469646,1.807066874582,negative change means the BC allocation permits more emissions than the regional baseline,canonical final-workbook-derived regional input
+carbon_and_food,東北,31.126294878900,30.265300736864,0.860994142036,0.972338688386,positive change is the arithmetic reduction from baseline to allowance,canonical final-workbook-derived regional input
+carbon_and_food,東京,190.276388000000,13.044431737930,177.231956262070,0.068555178470,positive change is the arithmetic reduction from baseline to allowance,canonical final-workbook-derived regional input
+carbon_and_food,北陸,18.548622529500,4.830202916478,13.718419613022,0.260407634518,positive change is the arithmetic reduction from baseline to allowance,canonical final-workbook-derived regional input
+carbon_and_food,中部,55.738069147900,18.200069223452,37.537999924448,0.326528519945,positive change is the arithmetic reduction from baseline to allowance,canonical final-workbook-derived regional input
+carbon_and_food,関西,39.187366268110,10.339916797396,28.847449470714,0.263858426378,positive change is the arithmetic reduction from baseline to allowance,canonical final-workbook-derived regional input
+carbon_and_food,中国,22.344563141300,12.051329355581,10.293233785719,0.539340567071,positive change is the arithmetic reduction from baseline to allowance,canonical final-workbook-derived regional input
+carbon_and_food,四国,9.768301640400,7.057376415817,2.710925224583,0.722477322632,positive change is the arithmetic reduction from baseline to allowance,canonical final-workbook-derived regional input
+carbon_and_food,九州,26.260842207818,15.944964313707,10.315877894111,0.607176425932,positive change is the arithmetic reduction from baseline to allowance,canonical final-workbook-derived regional input
+carbon_and_food,沖縄,4.569311820600,0.775457347283,3.793854473317,0.169709877051,positive change is the arithmetic reduction from baseline to allowance,canonical final-workbook-derived regional input
